@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link href="../static/css/bootstrap.min.css" rel="stylesheet">
+<title>Cadastrar Nova Pessoa Física</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h1>Cadastrar Nova Pessoa Física</h1>
+			</div>
+		</div>
+
+		<form id="novaPessoaFisicaForm">
+
+			<div class="row">
+				<div class="col-4">
+					<label for="numCpf" class="form-label">CPF:</label>
+				</div>
+				<div class="col-8">
+					<input type="num" name="numCpf" placeholder="99999999999" class="form-control" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-4">
+					<label for="txtNome" class="form-label">Nome:</label>
+				</div>
+				<div class="col-8">
+					<input type="text" name="txtNome" class="form-control" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-4">
+					<label for="datNascto" class="form-label">Data de Nascimento:</label>
+				</div>
+				<div class="col-8">
+					<input type="date" name="datNascto" placeholder="01/01/1990" class="form-control">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-4">
+					<label for="txtEndereco" class="form-label">Endereço</label>
+				</div>
+				<div class="col-8">
+					<input type="text" name="txtEndereco" class="form-control">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-4">
+					<label for="numCep" class="form-label">CEP:</label>
+				</div>
+				<div class="col-8">
+					<input type="number" name="numCep" placeholder="99999999" class="form-control">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-4">
+					<label for="txtTelefone" class="form-label">Telefone:</label>
+				</div>
+				<div class="col-8">
+					<input type="text" name="txtTelefone" placeholder="(99) 99999-9999"	class="form-control">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-4">
+					<label for="numRenda" class="form-label">Renda (R$):</label>
+				</div>
+				<div class="col-8">
+					<input type="number" name="numRenda" step=".01"	class="form-control">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-4">
+					<label for="selSituacao" class="form-label">Situação</label>
+				</div>
+				<div class="col-8">
+					<select name="selSituacao" class="form-select" disabled>
+						<option value="">- Selecione -</option>
+						<option value="0">Inativo</option>
+						<option value="1" selected>Ativo</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-4">
+					<label for="emlEmail" class="form-label">E-mail:</label>
+				</div>
+				<div class="col-8">
+					<input type="email" name="emlEmail" placeholder="name@example.com" class="form-control" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-4">
+					<label for="pwdSenha" class="form-label">Senha:</label>
+				</div>
+				<div class="col-8">
+					<input type="password" name="pwdSenha" class="form-control"	required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+					<input type="submit" value="Enviar" role="button" class="btn btn-primary">
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<script type="text/javascript" src="../static/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="../static/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../static/js/pessoafisica/nova.js"></script>
+</body>
+</html>
